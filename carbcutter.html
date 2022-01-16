@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="Katarzyna Skrzypek" content="Katarzyna Skrzypek">
 	<meta name="description" content="UX/UI designer with background in visual marketing and customer experience.">
-	<title> CarbCutter webapp design project </title>
+	<title>Kasia Skrzypek UX/UI designer Berlin Germany. </title>
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -16,7 +16,14 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<!-- eo favicon -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@100&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
 	<script src="https://kit.fontawesome.com/b192d5ccb1.js" crossorigin="anonymous"></script> <!-- fontawesome kit code -->
+
 
 </head>
 
@@ -24,7 +31,7 @@
 
 	<header>
 		<div class="container">
-			<img src="img/logo.png" alt="Kasia Skrzypek">
+			<img src="img/logo.png" class="logo" alt="Kasia Skrzypek">
 			<nav>
 				<ul>
 					<li><a href="index.html">Work</a></li> <!-- list item -->
@@ -37,7 +44,7 @@
 
 	<main>
 
-		<div class="section hero">
+		<div class="section intro">
 
 			<div class="container">
 
@@ -107,358 +114,375 @@
 			</div>
 		</div>
 
-
-		<div class="section analysis" id="analysis">
-
+		<div class="section understand">
 			<div class="container">
 				<h2> Understand and Empathize </h2>
-				<div class="row">
-					<div class="column">
-						<h3>Competitive Analysis</h3>
-						<p>In order to understand what solutions already are available to the users as well as where the opportunities for improvement lie, I performed a competitive analysis of two top contenders for the keto audience: Carb Manager and
-							MyFitnessPal.
-						</p>
-						<h4>What were the findings?</h4>
-						<ul>
-							<li>The biggest value lies in the inclusive food database</li>
-							<li>The more metrics there are to track the more confusing the interface. Long dropdown menus result in basic functions being hidden. </li>
-							<li>While it is easy to preview the daily progress - it is confusing to see how much is left to consume and how that translates to what can actually be eaten.</li>
-						</ul>
+
+				<div class="section analysis" id="analysis">
+					<div class="container">
+						<div class="row">
+							<div class="column">
+								<h3>Competitive Analysis</h3>
+								<p>In order to understand what solutions already are available to the users as well as where the opportunities for improvement lie, I performed a competitive analysis of two top contenders for the keto audience: Carb Manager and
+									MyFitnessPal.
+								</p>
+								<h4>What were the findings?</h4>
+								<ul>
+									<li>The biggest value lies in the inclusive food database</li>
+									<li>The more metrics there are to track the more confusing the interface. Long dropdown menus result in basic functions being hidden. </li>
+									<li>While it is easy to preview the daily progress - it is confusing to see how much is left to consume and how that translates to what can actually be eaten.</li>
+								</ul>
+							</div>
+							<div class="column">
+								<picture>
+									<source srcset="img/cc/cc-mobile-competitive-analysis-collage-comp.png" media="(max-width:767px)">
+									<img src="img/cc/cc-desktop-competitive-analysis-collage-comp.png" alt="App screenshots">
+								</picture>
+							</div>
+						</div>
 					</div>
-					<div class="column">
-						<picture>
-							<source srcset="img/cc/cc-mobile-competitive-analysis-collage-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-desktop-competitive-analysis-collage-comp.png" alt="App screenshots">
-						</picture>
+				</div>
+
+				<div class="section interviews" id="interviews">
+					<div class="container">
+						<div class="row">
+							<div class="column">
+								<h3>User Interviews</h3>
+								<p>Being a user myself, I ran the risk of unconscious bias in my search for solutions. Therefore, I needed to uncover the truth (or as much of it as possible) about the actual user behaviors by asking open ended questions and
+									thoroughly
+									recording all the answers. </p>
+								<h4>I needed the interviews to help me:</h4>
+								<ul>
+									<li>Understand more about others’ behaviors and contexts around keto diet,</li>
+									<li>Pinpoint the main tasks that users wanted to complete and their prioritization,</li>
+									<li>Uncover pain points while performing these tasks,</li>
+									<li>Gain insights into community behaviors and other potential latent needs of the users.</li>
+								</ul>
+							</div>
+							<div class="column">
+								<picture>
+									<source srcset="img/cc/cc-mobile-user-interviews-comp.png" media="(max-width:767px)">
+									<img src="img/cc/cc-desktop-user-interviews-comp.png" alt="My Image">
+								</picture>
+							</div>
+							<h4>What I learned from the interviews:</h4>
+							<ul>
+								<li>People start keto diet mainly for weight loss reasons,</li>
+								<li>Users clearly separate the food logging from exercise logging. They are more prone to focus on food logging and find exercise logging imprecise,</li>
+								<li>An app or online calculator is indispensable in the keto diet process. Logging usually takes place after the meal or at the end of the day,</li>
+								<li>None of the users tried more than 1 app. Once they downloaded an app, they found a way to make it work for them!</li>
+								<li>Once logging - precision is of utmost importance,</li>
+								<li>Users like to set up meals/recipes/frequent foods to speed up logging - they tend to eat similar food often,</li>
+								<li>They do not report need for community interaction,</li>
+								<li>Strong need for expert input.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section interviews" id="interviews">
 
-			<div class="container">
-				<h3>User Interviews</h3>
-				<picture>
-					<source srcset="img/cc/cc-mobile-user-interviews-comp.png" media="(max-width:767px)">
-					<img src="img/cc/cc-desktop-user-interviews-comp.png" alt="My Image">
-				</picture>
-				<p>Being a user myself, I ran the risk of unconscious bias in my search for solutions. Therefore, I needed to uncover the truth (or as much of it as possible) about the actual user behaviors by asking open ended questions and thoroughly
-					recording all the answers.
-				</p>
-				<h4>I needed the interviews to help me:</h4>
-				<ul>
-					<li>Understand more about others’ behaviors and contexts around keto diet,</li>
-					<li>Pinpoint the main tasks that users wanted to complete and their prioritization,</li>
-					<li>Uncover pain points while performing these tasks,</li>
-					<li>Gain insights into community behaviors and other potential latent needs of the users.</li>
-				</ul>
-
-				<h4>What I learned from the interviews:</h4>
-				<ul>
-					<li>People start keto diet mainly for weight loss reasons,</li>
-					<li>Users clearly separate the food logging from exercise logging. They are more prone to focus on food logging and find exercise logging imprecise,</li>
-					<li>An app or online calculator is indispensable in the keto diet process. Logging usually takes place after the meal or at the end of the day,</li>
-					<li>None of the users tried more than 1 app. Once they downloaded an app, they found a way to make it work for them!</li>
-					<li>Once logging - precision is of utmost importance,</li>
-					<li>Users like to set up meals/recipes/frequent foods to speed up logging - they tend to eat similar food often,</li>
-					<li>They do not report need for community interaction,</li>
-					<li>Strong need for expert input.</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="section personas" id="personas">
+		<div class="section define">
 			<div class="container">
 				<h2> Define </h2>
-				<h3>User Personas</h3>
-				<p>Based on the interview and common user goals and tasks, I identified 3 key personas to help maintain focus on the user throughout the design process.</p>
-				<p>For the sake of this project I decided to focus on one of them - Kate.</p>
-				<div class="row">
-					<div class="column">
+				<div class="section personas" id="personas">
+					<div class="container">
+						<h3>User Personas</h3>
+						<p>Based on the interview and common user goals and tasks, I identified 3 key personas to help maintain focus on the user throughout the design process.</p>
+						<p>For the sake of this project I decided to focus on one of them - Kate.</p>
+						<div class="row">
+							<div class="column">
+								<picture>
+									<source srcset="img/cc/cc-mobile-persona-chris-comp.png" media="(max-width:767px)">
+									<img src="img/cc/cc-desktop-persona-chris-comp.png" alt="Chris persona image">
+								</picture>
+							</div>
+							<div class="column">
+								<picture>
+									<source srcset="img/cc/cc-mobile-persona-craig-comp.png" media="(max-width:767px)">
+									<img src="img/cc/cc-desktop-persona-craig-comp.png" alt="Craig persona image">
+								</picture>
+							</div>
+						</div>
 						<picture>
-							<source srcset="img/cc/cc-mobile-persona-chris-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-desktop-persona-chris-comp.png" alt="Chris persona image">
-						</picture>
-					</div>
-					<div class="column">
-						<picture>
-							<source srcset="img/cc/cc-mobile-persona-craig-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-desktop-persona-craig-comp.png" alt="Craig persona image">
+							<source srcset="img/cc/cc-mobile-persona-kate-comp.png" media="(max-width:767px)">
+							<img src="img/cc/cc-desktop-persona-kate-comp.png" alt="Kate persona image">
 						</picture>
 					</div>
 				</div>
-				<picture>
-					<source srcset="img/cc/cc-mobile-persona-kate-comp.png" media="(max-width:767px)">
-					<img src="img/cc/cc-desktop-persona-kate-comp.png" alt="Kate persona image">
-				</picture>
 			</div>
 
+			<div class="section journey" id="journey">
+				<div class="container">
+					<h3>Kate's User Journey</h3>
+					<p>Bearing Kate in mind, I identified the key tasks that need to be completed together with accompanying emotional states for each step of the user journey.
+					</p>
+					<picture>
+						<source srcset="img/cc/cc-mobile-user-journey-kate-comp.png" media="(max-width:767px)">
+						<img src="img/cc/cc-desktop-user-journey-kate-comp.png" alt="My Image">
+					</picture>
+				</div>
+			</div>
+
+			<div class="section flow" id="flow">
+				<div class="container">
+					<div class="row">
+						<div class="column">
+							<h3>Kate's User Flow</h3>
+							<p>Based on the goals that Kate needs to achieve, which are the key tasks for the app, I mapped out the relevant user flows for:
+							</p>
+							<ul>
+								<li>Sign up,</li>
+								<li>Account setup,</li>
+								<li>Food logging,</li>
+								<li>Meal saving.</li>
+							</ul>
+							<p>Logging and tracking macros is the primary main objective of all users of the app - which is why I wanted to focus this particular workflow:
+							</p>
+							<h4>Logging in food</h4>
+							<p>Entry point: App dashboard</p>
+							<p>Success criteria: Food is added to the Log</p>
+							<h4>Task flow</h4>
+							<ul>
+								<li>User starts at the dashboard level</li>
+								<li>User chooses which meal they want to add food for</li>
+								<li>Inputs food name and searches in the results</li>
+								<li>Chooses the relevant product from the list</li>
+								<li>Inputs the amount</li>
+								<li>Previews and adds the entry to the log</li>
+							</ul>
+						</div>
+						<div class="column">
+							<picture>
+								<source srcset="img/cc/cc-mobile-user-flow-comp.png" media="(max-width:767px)">
+								<img src="img/cc/cc-desktop-user-flow-comp.png" alt="My Image">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="section journey" id="journey">
+
+		<div class="section prototype">
+			<h2>Prototype & test</h2>
+
 			<div class="container">
-				<h3>Kate's User Journey</h3>
-				<p>Bearing Kate in mind, I identified the key tasks that need to be completed together with accompanying emotional states for each step of the user journey.
-				</p>
-				<picture>
-					<source srcset="img/cc/cc-mobile-user-journey-kate-comp.png" media="(max-width:767px)">
-					<img src="img/cc/cc-desktop-user-journey-kate-comp.png" alt="My Image">
-				</picture>
-			</div>
-		</div>
-		<div class="section flow" id="flow">
-			<div class="container">
-				<div class="row">
-					<div class="column">
-						<h3>Kate's User Flow</h3>
-						<p>Based on the goals that Kate needs to achieve, which are the key tasks for the app, I mapped out the relevant user flows for:
-						</p>
+				<div class="section evolution" id="evolution">
+					<h3>Design evolution</h3>
+					<p>Mapping out the key workflows helped me focus on the main app functionalities during the early stages of prototyping.</p>
+					<p>Starting with paper sketches for “quick and dirty” visualisation of the information architecture and general UI helped me kick off the iterative process of designing my wireframes.</p>
+					<p>After creating a mid-fidelity prototype in Figma, it was time to put the design of the core functions to the test.</p>
+					<p>Usability testing on the mid-fidelity prototype allowed me to poinpoint areas for improvement and further iterate on the wireframes.</p>
+					<p>This is the design evolution for each of the key screens in Kate’s user flows:</p>
+					<div>
+						<h4>Sign up</h4>
+						<div>
+							<picture>
+								<source srcset="img/cc/cc-mobile-evolution-signup-comp.png" media="(max-width:767px)">
+								<img src="img/cc/cc-evolution-signup-comp.png" alt="My Image">
+							</picture>
+						</div>
 						<ul>
-							<li>Sign up,</li>
-							<li>Account setup,</li>
-							<li>Food logging,</li>
-							<li>Meal saving.</li>
-						</ul>
-						<p>Logging and tracking macros is the primary main objective of all users of the app - which is why I wanted to focus this particular workflow:
-						</p>
-						<h4>Logging in food</h4>
-						<p>Entry point: App dashboard</p>
-						<p>Success criteria: Food is added to the Log</p>
-
-						<h4>Task flow</h4>
-						<ul>
-							<li>User starts at the dashboard level</li>
-							<li>User chooses which meal they want to add food for</li>
-							<li>Inputs food name and searches in the results</li>
-							<li>Chooses the relevant product from the list</li>
-							<li>Inputs the amount</li>
-							<li>Previews and adds the entry to the log</li>
+							<li>1. Sign up using Facebook was deprioritized due to business considerations - we would prefer the user to use their email address for the signup.
+							</li>
+							<li>2. Based on accessibility considerations - labels, icons and placeholder text were introduced; Password instructions were included prior to the input form and not in form of a placeholder. Colors were adjusted for the optimum
+								contrast.
+							</li>
+							<li>3. Based on feedback - Log In option was modified for better discoverability and design consistency.
+							</li>
 						</ul>
 					</div>
-					<div class="column">
-						<picture>
-							<source srcset="img/cc/cc-mobile-user-flow-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-desktop-user-flow-comp.png" alt="My Image">
-						</picture>
+
+					<div>
+						<h4>Account setup</h4>
+						<p>The account setup screen underwent considerable changes based on usability testing:</p>
+						<div>
+							<picture>
+								<source srcset="img/cc/cc-mobile-evolution-setup-comp.png" media="(max-width:767px)">
+								<img src="img/cc/cc-evolution-setup-comp.png" alt="My Image">
+							</picture>
+						</div>
+						<ul>
+							<li>1. Sliders were dropped in favor of input forms which are more understandable and precise, unit toggles were changed into chips for greater simplicity
+							</li>
+							<li>2. I have further changed the layout to make it less spread out and cleaner. Based on accessibility considerations - input form containers were introduced and colors were adjusted for the optimum contrast.
+							</li>
+							<li>3. Alert/info box was optimised to look less like a button.
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Dashboard</h4>
+						<p>The core of the dashboard remained the same throughout the iterations - with some exceptions:</p>
+						<div>
+							<picture>
+								<source srcset="img/cc/cc-mobile-evolution-dash-comp.png.png" media="(max-width:767px)">
+								<img src="img/cc/cc-evolution-dash-comp.png" alt="My Image">
+							</picture>
+						</div>
+						<ul>
+							<li>1. The floating + button was dropped based on user testing as well as preference testing.
+							</li>
+							<li>2. ‘Add food’ as well as ‘save food’ functions in each meal card were made into link buttons with descriptive microcopy - instead of being hidden in the menu or as icons.
+							</li>
+							<li>3. Based on peer review, the Tab menu was adjusted to include white fill - to separate it visually from the rest of the content.
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Search food</h4>
+						<div>
+							<picture>
+								<source srcset="img/cc/cc-mobile-evolution-search-comp.png" media="(max-width:767px)">
+								<img src="img/cc/cc-evolution-search-comp.png" alt="My Image">
+							</picture>
+						</div>
+						<ul>
+							<li>1. Because the + button was scrapped, there was no need to edit the type of meal (e.g. breakfast, lunch etc.) in the ‘Add food’ screen. This functionality was dropped for the sake of simplicity.
+							</li>
+							<li>2. Empty states filled with the placeholder recommendation foods could be confused for actual content - therefore, this idea was dropped as well.
+							</li>
+							<li>3. Tab menu was modified to be consistent with other UI elements.
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Food screen</h4>
+						<p>The functionalities remained the same but the interface has been changed considerably:</p>
+						<div>
+							<picture>
+								<source srcset="img/cc/cc-mobile-evolution-food-screen-comp.png" media="(max-width:767px)">
+								<img src="img/cc/cc-evolution-food-screen-comp.png" alt="My Image">
+							</picture>
+						</div>
+						<ul>
+							<li>1. Labels were introduced to the input forms, instead of conveying this information as empty states.
+							</li>
+							<li>2. Placeholder content was dropped so that it would not be confused with the actual content, but default value for ‘serving size’ was kept due to confusion that ‘serving size’ terms caused during usability testing.
+							</li>
+							<li>3. Image was dropped due to concerns about the content creation process (really troublesome to upload images for most foods there are) as well as due to loading time concerns.
+							</li>
+						</ul>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
-		<div class="section evolution" id="evolution">
-			<h2>Prorotype & test</h2>
-
-			<h3>Design evolution</h3>
-			<p>Mapping out the key workflows helped me focus on the main app functionalities during the early stages of prototyping.</p>
-			<p>Starting with paper sketches for “quick and dirty” visualisation of the information architecture and general UI helped me kick off the iterative process of designing my wireframes.</p>
-			<p>After creating a mid-fidelity prototype in Figma, it was time to put the design of the core functions to the test.</p>
-			<p>Usability testing on the mid-fidelity prototype allowed me to poinpoint areas for improvement and further iterate on the wireframes.</p>
-			<p>This is the design evolution for each of the key screens in Kate’s user flows:</p>
-
-			<div>
-				<h4>Sign up</h4>
-				<div>
-					<picture>
-						<source srcset="img/cc/cc-mobile-evolution-signup-comp.png" media="(max-width:767px)">
-						<img src="img/cc/cc-evolution-signup-comp.png" alt="My Image">
-					</picture>
-				</div>
-				<ul>
-					<li>1. Sign up using Facebook was deprioritized due to business considerations - we would prefer the user to use their email address for the signup.
-					</li>
-					<li>2. Based on accessibility considerations - labels, icons and placeholder text were introduced; Password instructions were included prior to the input form and not in form of a placeholder. Colors were adjusted for the optimum contrast.
-					</li>
-					<li>3. Based on feedback - Log In option was modified for better discoverability and design consistency.
-					</li>
-				</ul>
-			</div>
-
-			<div>
-				<h4>Account setup</h4>
-				<p>The account setup screen underwent considerable changes based on usability testing:</p>
-				<div>
-					<picture>
-						<source srcset="img/cc/cc-mobile-evolution-setup-comp.png" media="(max-width:767px)">
-						<img src="img/cc/cc-evolution-setup-comp.png" alt="My Image">
-					</picture>
-				</div>
-				<ul>
-					<li>1. Sliders were dropped in favor of input forms which are more understandable and precise, unit toggles were changed into chips for greater simplicity
-					</li>
-					<li>2. I have further changed the layout to make it less spread out and cleaner
-					</li>
-					<li>3. Based on accessibility considerations - input form containers were introduced and colors were adjusted for the optimum contrast. Alert/info box was optimised to look less like a button.
-					</li>
-				</ul>
-			</div>
-
-			<div>
-				<h4>Dashboard</h4>
-				<p>The core of the dashboard remained the same throughout the iterations - with some exceptions:</p>
-				<div>
-					<picture>
-						<source srcset="img/cc/cc-mobile-evolution-dash-comp.png.png" media="(max-width:767px)">
-						<img src="img/cc/cc-evolution-dash-comp.png" alt="My Image">
-					</picture>
-				</div>
-				<ul>
-					<li>1. The floating + button was dropped based on user testing as well as preference testing.
-					</li>
-					<li>2. ‘Add food’ as well as ‘save food’ functions in each meal card were made into link buttons with descriptive microcopy - instead of being hidden in the menu or as icons.
-					</li>
-					<li>3. Based on peer review, the Tab menu was adjusted to include white fill - to separate it visually from the rest of the content.
-					</li>
-				</ul>
-			</div>
-
-			<div>
-				<h4>Search food</h4>
-				<div>
-					<picture>
-						<source srcset="img/cc/cc-mobile-evolution-search-comp.png" media="(max-width:767px)">
-						<img src="img/cc/cc-evolution-search-comp.png" alt="My Image">
-					</picture>
-				</div>
-				<ul>
-					<li>1. Because the + button was scrapped, there was no need to edit the type of meal (e.g. breakfast, lunch etc.) in the ‘Add food’ screen. This functionality was dropped for the sake of simplicity.
-					</li>
-					<li>2. Empty states filled with the placeholder recommendation foods could be confused for actual content - therefore, this idea was dropped as well.
-					</li>
-					<li>3. Tab menu was modified to be consistent with other UI elements.
-					</li>
-				</ul>
-			</div>
-
-			<div>
-				<h4>Food screen</h4>
-				<p>The functionalities remained the same but the interface has been changed considerably:</p>
-				<div>
-					<picture>
-						<source srcset="img/cc/cc-mobile-evolution-food-screen-comp.png" media="(max-width:767px)">
-						<img src="img/cc/cc-evolution-food-screen-comp.png" alt="My Image">
-					</picture>
-				</div>
-				<ul>
-					<li>1. Labels were introduced to the input forms, instead of conveying this information as empty states.
-					</li>
-					<li>2. Placeholder content was dropped so that it would not be confused with the actual content, but default value for ‘serving size’ was kept due to confusion that ‘serving size’ terms caused during usability testing.
-					</li>
-					<li>3. Image was dropped due to concerns about the content creation process (really troublesome to upload images for most foods there are) as well as due to loading time concerns.
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="section testing" id="testing">
+		<div class="section testing">
 			<div class="container">
 				<h2>Usability testing</h2>
-				<p>At the mid-fidelity stage it was neccessary to conduct a usability testing.</p>
-				<p>I wanted to understand if my design is developing in the right direction and needed aswers to questions that arose in the ideation stage. </p>
-				<div class="row">
-					<div class="column">
-						<h3>What I needed to know</h3>
-						<ul>
-							<li>Do the users understand the purpose and value of the app?</li>
-							<li>Do they understand the concept of Log in the context of the app?</li>
-							<li>How do the users search for food items in the app</li>
-							<li>Are all dashboard elements understandable/useful /finadable to the users? Is anything missing?</li>
-							<li>Do they find all the functionalities useful so far? </li>
-							<li>What errors to they make and how do they recover from them?</li>
-						</ul>
-					</div>
-					<div class="column">
-						<picture>
-							<source srcset="img/cc/cc-mobile-board-testing-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-board-testing-comp.png" alt="Save meal screen">
-						</picture>
+
+				<div class="section testing" id="testing">
+					<div class="container">
+						<p>At the mid-fidelity stage it was neccessary to conduct a usability testing.</p>
+						<p>I wanted to understand if my design is developing in the right direction and needed aswers to questions that arose in the ideation stage. </p>
+						<div class="row">
+							<div class="column">
+								<h3>What I needed to know</h3>
+								<ul>
+									<li>Do the users understand the purpose and value of the app?</li>
+									<li>Do they understand the concept of Log in the context of the app?</li>
+									<li>How do the users search for food items in the app</li>
+									<li>Are all dashboard elements understandable/useful /finadable to the users? Is anything missing?</li>
+									<li>Do they find all the functionalities useful so far? </li>
+									<li>What errors to they make and how do they recover from them?</li>
+								</ul>
+							</div>
+							<div class="column">
+								<picture>
+									<source srcset="img/cc/cc-mobile-board-testing-comp.png" media="(max-width:767px)">
+									<img src="img/cc/cc-board-testing-comp.png" alt="Save meal screen">
+								</picture>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<h3>What I learned from usability testing:</h3>
-
 				<picture>
 					<source srcset="img/cc/cc-mobile-testing-savemeal-collage-comp.png" media="(max-width:767px)">
 					<img src="img/cc/cc-testing-savemeal-collage-comp.png" alt="Log screen image">
 				</picture>
-
 				<picture>
 					<source srcset="img/cc/cc-mobile-testing-logscreen-comp.png" media="(max-width:767px)">
 					<img src="img/cc/cc-testing-logscreen-comp.png" alt="My Image">
 				</picture>
 			</div>
-
 		</div>
 
-		<div class="section stylegudie" id="styleguide">
+		<div class="section iterate">
 			<div class="container">
 				<h2>Iterate</h2>
-				<div class="row">
-					<div class="column">
-						<h3>UI Styleguide</h3>
-						<p>Whether working in a team or on many diverse projects at the same time, it is important to create a set of rules and components to ensure interface design consisency. Therefore, I created a styleguide that covers the most important
-							visual elements of the CarbCutter design.
-						</p>
-						<a href="files/cc-styleguide.pdf" target="_blank">Open UI Styleguide</a>
-					</div>
-					<div class="column">
-						<picture>
-							<source srcset="img/cc/cc-mobile-styleguide-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-styleguide-comp.jpg" alt="Log screen image">
-						</picture>
-					</div>
 
+				<div class="section styleguide" id="styleguide">
+					<div class="container">
+						<div class="row">
+							<div class="column">
+								<h3>UI Styleguide</h3>
+								<p>Whether working in a team or on many diverse projects at the same time, it is important to create a set of rules and components to ensure interface design consisency. Therefore, I created a styleguide that covers the most important
+									visual elements of the CarbCutter design.
+								</p>
+								<a href="files/cc-styleguide.pdf" target="_blank">Open UI Styleguide</a>
+							</div>
+							<div class="column">
+								<picture>
+									<source srcset="img/cc/cc-mobile-styleguide-comp.png" media="(max-width:767px)">
+									<img src="img/cc/cc-styleguide-comp.jpg" alt="Log screen image">
+								</picture>
+							</div>
+						</div>
+					</div>
 				</div>
-
 			</div>
 
-		</div>
-
-		<div class="section prototype" id="prototype">
-			<div class="container">
-				<div class="row">
-					<div class="column">
-						<picture>
-							<source srcset="img/cc/cc-mobile-prototype-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-prototype-comp.png" alt="Log screen image">
-						</picture>
+			<div class="section prototype" id="prototype">
+				<div class="container">
+					<div class="row">
+						<div class="column">
+							<picture>
+								<source srcset="img/cc/cc-mobile-prototype-comp.png" media="(max-width:767px)">
+								<img src="img/cc/cc-prototype-comp.png" alt="Log screen image">
+							</picture>
+						</div>
+						<div class="column">
+							<h3>Prototype</h3>
+							<a href="#.pdf" target="_blank">Launch Figma prototype</a>
+						</div>
 					</div>
-					<div class="column">
-						<h3>Prototype</h3>
-						<a href="#.pdf" target="_blank">Launch Figma prototype</a>
-					</div>
-
 				</div>
-
 			</div>
-
 		</div>
 
-		<div class="section next" id="next">
+		<div class="section nextsteps">
 			<div class="container">
 				<h2>Next steps</h2>
-				<p>A Designer’s work is never fully complete. CarbCutter is constructed simply and utilizes a pattern for food logging that is familiar to existing users and easily discoverable for the future one
-				</p>
-				<p>The next steps will mostly concern re-testing the usability of the app with with the realistic high-fidelity prototype.</p>
-				<p>Only when no further errors are apparent will I move on to add more functionalities based on the needs of each user persona.</p>
 
-				<h3>What I learned from this project?</h3>
-				<p>There is only one way to eat an elephant: one bite at a time. </p>
-				<p>This project visualized to me the challenges of creating an entire product from scratch and how the original idea evolves as the work progresses.</p>
-				<p>Overall, I am happy with how my first UX case study turned out. I learned that the best way to stay on track is to focus on the user every step of the way.</p>
-				<ul>
-					<li>I learned it is important to visualize ideas as early as they come, but not get too attached to them. </li>
-					<li>It’s ok to have alternatives - there is more than one truth out there.</li>
-					<li>I learned to let go of existing beliefs, listen to the user, and try to identify the problems behind the problems.</li>
-					<li>Taking on a fresh mindset, starting with a clean slate is fine! What if nothing is impossible? This approach sparks interesting creative conversation.</li>
-					<li>I learned to fail better. Sharing work early, seeking feedback often and refining the design based on what works and what doesn’t is a cheaper and faster way to achieve the set goals. </li>
-					<li>And finally, what I learned the hard way, was keeping track of all the ideas and explorations. It’s easy to get excited about the new, but sometimes the solution we are seeking is the one we already have. </li>
-				</ul>
-				<p>PS. No elephants were harmed during this study ;) </p>
-
+				<div class="section next" id="next">
+					<div class="container">
+						<p>A Designer’s work is never fully complete. CarbCutter is constructed simply and utilizes a pattern for food logging that is familiar to existing users and easily discoverable for the future one
+						</p>
+						<p>The next steps will mostly concern re-testing the usability of the app with with the realistic high-fidelity prototype.</p>
+						<p>Only when no further errors are apparent will I move on to add more functionalities based on the needs of each user persona.</p>
+						<h3>What I learned from this project?</h3>
+						<p>There is only one way to eat an elephant: one bite at a time. </p>
+						<p>This project visualized to me the challenges of creating an entire product from scratch and how the original idea evolves as the work progresses.</p>
+						<p>Overall, I am happy with how my first UX case study turned out. I learned that the best way to stay on track is to focus on the user every step of the way.</p>
+						<ul>
+							<li>I learned it is important to visualize ideas as early as they come, but not get too attached to them. </li>
+							<li>It’s ok to have alternatives - there is more than one truth out there.</li>
+							<li>I learned to let go of existing beliefs, listen to the user, and try to identify the problems behind the problems.</li>
+							<li>Taking on a fresh mindset, starting with a clean slate is fine! What if nothing is impossible? This approach sparks interesting creative conversation.</li>
+							<li>I learned to fail better. Sharing work early, seeking feedback often and refining the design based on what works and what doesn’t is a cheaper and faster way to achieve the set goals. </li>
+							<li>And finally, what I learned the hard way, was keeping track of all the ideas and explorations. It’s easy to get excited about the new, but sometimes the solution we are seeking is the one we already have. </li>
+						</ul>
+						<p>PS. No elephants were harmed during this study ;) </p>
+					</div>
+				</div>
 			</div>
-
 		</div>
-
 	</main>
 
 	<footer id="contact">
@@ -467,7 +491,7 @@
 			<p> If you like my work and would like to discuss opportunities, do not hesitate to get in touch. Call: <a href="tel:+4917660601792">+49 176 6060 1700 </a> or Skype me at <a href="skype:live:katarzyna.skrzypek_2">live:kat.skrzypek_2</a>. </p>
 			<p> Prefer sending an email? </p>
 			<div>
-				<a href="mailto:katarzyna.skrzypek@gmail.com?subject=Let's%20talk!&body=Email%20generated%20using%20Mailto.co.uk">Email me</a>
+				<a href="mailto:katarzyna.skrzypek@gmail.com?subject=Let's%20talk!&body=Email%20generated%20using%20Mailto.co.uk" class="button contact">Email me</a>
 			</div>
 
 			<div>

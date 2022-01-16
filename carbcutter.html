@@ -67,7 +67,7 @@
 						<p> Tools used: Figma | Adobe Create Suite | Balsamiq | Miro </p>
 					</div>
 
-					<a href="#"> Open pdf with detailed overview </a>
+					<a href="#" class=button> Open pdf </a>
 				</div>
 
 			</div>
@@ -276,88 +276,133 @@
 					<p>This is the design evolution for each of the key screens in Kate’s user flows:</p>
 					<div>
 						<h4>Sign up</h4>
-						<div>
-							<picture>
-								<source srcset="img/cc/cc-mobile-evolution-signup-comp.png" media="(max-width:767px)">
-								<img src="img/cc/cc-evolution-signup-comp.png" alt="My Image">
-							</picture>
+						<div class="row">
+							<div class="column">
+								<picture>
+									<img src="img/cc/evo-signup-lowfid.png" alt="My Image">
+								</picture>
+							</div>
+							<div class="column">
+								<picture>
+									<img src="img/cc/evo-signup-hifid.png" alt="My Image">
+								</picture>
+							</div>
 						</div>
-						<ul>
-							<li>1. Sign up using Facebook was deprioritized due to business considerations - we would prefer the user to use their email address for the signup.
-							</li>
-							<li>2. Based on accessibility considerations - labels, icons and placeholder text were introduced; Password instructions were included prior to the input form and not in form of a placeholder. Colors were adjusted for the optimum
-								contrast.
-							</li>
-							<li>3. Based on feedback - Log In option was modified for better discoverability and design consistency.
-							</li>
-						</ul>
+
+						<div>
+							<ul>
+								<li>1. Sign up using Facebook was deprioritized due to business considerations - we would prefer the user to use their email address for the signup.
+								</li>
+								<li>2. Based on accessibility considerations - labels, icons and placeholder text were introduced; Password instructions were included prior to the input form and not in form of a placeholder. Colors were adjusted for the optimum
+									contrast.
+								</li>
+								<li>3. Based on feedback - Log In option was modified for better discoverability and design consistency.
+								</li>
+							</ul>
+						</div>
 					</div>
 
 					<div>
 						<h4>Account setup</h4>
 						<p>The account setup screen underwent considerable changes based on usability testing:</p>
-						<div>
-							<picture>
-								<source srcset="img/cc/cc-mobile-evolution-setup-comp.png" media="(max-width:767px)">
-								<img src="img/cc/cc-evolution-setup-comp.png" alt="My Image">
-							</picture>
-						</div>
-						<ul>
-							<li>1. Sliders were dropped in favor of input forms which are more understandable and precise, unit toggles were changed into chips for greater simplicity
-							</li>
-							<li>2. I have further changed the layout to make it less spread out and cleaner. Based on accessibility considerations - input form containers were introduced and colors were adjusted for the optimum contrast.
-							</li>
-							<li>3. Alert/info box was optimised to look less like a button.
-							</li>
-						</ul>
-					</div>
+						<div class="row">
+							<div class="column">
+								<picture>
+									<img src="img/cc/evo-setup-midfid.png" alt="My Image">
+								</picture>
+							</div>
+							<div class="column">
+								<picture>
+									<img src="img/cc/evo-setup-hifid.png" alt="My Image">
+								</picture>
+							</div>
 
-					<div>
-						<h4>Dashboard</h4>
-						<p>The core of the dashboard remained the same throughout the iterations - with some exceptions:</p>
-						<div>
-							<picture>
-								<source srcset="img/cc/cc-mobile-evolution-dash-comp.png.png" media="(max-width:767px)">
-								<img src="img/cc/cc-evolution-dash-comp.png" alt="My Image">
-							</picture>
+							<div>
+								<ul>
+									<li>1. Sliders were dropped in favor of input forms which are more understandable and precise, unit toggles were changed into chips for greater simplicity
+									</li>
+									<li>2. I have further changed the layout to make it less spread out and cleaner. Based on accessibility considerations - input form containers were introduced and colors were adjusted for the optimum contrast.
+									</li>
+									<li>3. Alert/info box was optimised to look less like a button.
+									</li>
+								</ul>
+							</div>
 						</div>
-						<ul>
-							<li>1. The floating + button was dropped based on user testing as well as preference testing.
-							</li>
-							<li>2. ‘Add food’ as well as ‘save food’ functions in each meal card were made into link buttons with descriptive microcopy - instead of being hidden in the menu or as icons.
-							</li>
-							<li>3. Based on peer review, the Tab menu was adjusted to include white fill - to separate it visually from the rest of the content.
-							</li>
-						</ul>
+
+						<div>
+							<h4>Dashboard</h4>
+							<p>The core of the dashboard remained the same throughout the iterations - with some exceptions:</p>
+							<div class="row">
+								<div class="column">
+									<picture>
+										<img src="img/cc/evo-dash-midfid.png" alt="My Image">
+									</picture>
+								</div>
+								<div class="column">
+									<picture>
+										<img src="img/cc/evo-dash-hifid.png" alt="My Image">
+									</picture>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<ul>
+								<li>1. The floating + button was dropped based on user testing as well as preference testing.
+								</li>
+								<li>2. ‘Add food’ as well as ‘save food’ functions in each meal card were made into link buttons with descriptive microcopy - instead of being hidden in the menu or as icons.
+								</li>
+								<li>3. Based on peer review, the Tab menu was adjusted to include white fill - to separate it visually from the rest of the content.
+								</li>
+							</ul>
+						</div>
 					</div>
 
 					<div>
 						<h4>Search food</h4>
+						<div class="row">
+							<div class="column">
+								<picture>
+									<img src="img/cc/evo-search-midfid.png" alt="My Image">
+								</picture>
+							</div>
+							<div class="column">
+								<picture>
+									<img src="img/cc/evo-search-hifid.png" alt="My Image">
+								</picture>
+							</div>
+						</div>
+
 						<div>
+							<ul>
+								<li>1. Because the + button was scrapped, there was no need to edit the type of meal (e.g. breakfast, lunch etc.) in the ‘Add food’ screen. This functionality was dropped for the sake of simplicity.
+								</li>
+								<li>2. Empty states filled with the placeholder recommendation foods could be confused for actual content - therefore, this idea was dropped as well.
+								</li>
+								<li>3. Tab menu was modified to be consistent with other UI elements.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<h4>Food screen</h4>
+					<p>The functionalities remained the same but the interface has been changed considerably:</p>
+					<div class="row">
+						<div class="column">
 							<picture>
-								<source srcset="img/cc/cc-mobile-evolution-search-comp.png" media="(max-width:767px)">
-								<img src="img/cc/cc-evolution-search-comp.png" alt="My Image">
+								<img src="img/cc/evo-food-midfid.png" alt="My Image">
 							</picture>
 						</div>
-						<ul>
-							<li>1. Because the + button was scrapped, there was no need to edit the type of meal (e.g. breakfast, lunch etc.) in the ‘Add food’ screen. This functionality was dropped for the sake of simplicity.
-							</li>
-							<li>2. Empty states filled with the placeholder recommendation foods could be confused for actual content - therefore, this idea was dropped as well.
-							</li>
-							<li>3. Tab menu was modified to be consistent with other UI elements.
-							</li>
-						</ul>
+						<div class="column">
+							<picture>
+								<img src="img/cc/evo-food-hifid.png" alt="My Image">
+							</picture>
+						</div>
 					</div>
 
 					<div>
-						<h4>Food screen</h4>
-						<p>The functionalities remained the same but the interface has been changed considerably:</p>
-						<div>
-							<picture>
-								<source srcset="img/cc/cc-mobile-evolution-food-screen-comp.png" media="(max-width:767px)">
-								<img src="img/cc/cc-evolution-food-screen-comp.png" alt="My Image">
-							</picture>
-						</div>
 						<ul>
 							<li>1. Labels were introduced to the input forms, instead of conveying this information as empty states.
 							</li>
@@ -422,7 +467,8 @@
 						<div class="row">
 							<div class="column">
 								<h3>UI Styleguide</h3>
-								<p>Whether working in a team or on many diverse projects at the same time, it is important to create a set of rules and components to ensure interface design consisency. Therefore, I created a styleguide that covers the most important
+								<p>Whether working in a team or on many diverse projects at the same time, it is important to create a set of rules and components to ensure interface design consisency. Therefore, I created a styleguide that covers the most
+									important
 									visual elements of the CarbCutter design.
 								</p>
 								<a href="files/cc-styleguide.pdf" target="_blank">Open UI Styleguide</a>

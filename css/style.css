@@ -10,68 +10,80 @@ White: rgba(255,255,255,1) #ffffff
 Black: rgba(0,0,0,1) #000000
 */
 body {
-background-color: #ffffff;
+  background-color: #ffffff;
   font-family: 'Archivo', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-font-weight: 300; /* Sets the font weight to 300 */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-letter-spacing: 0.25px;
-color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.25px;
+  color: #4a4a4a;
 }
+
 h1, h2, h3, h4 {
-line-height: 1.4;}
+  line-height: 1.4;
+}
+
 h1 {
-font-family: 'Julius Sans One', sans-serif;
-font-size: 2.75em;
-font-weight: 400;
-text-transform: uppercase}
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.75em;
+  font-weight: 400;
+  text-transform: uppercase
+}
+
 h2 {
   font-family: 'Archivo Narrow', sans-serif;
   color: #0B5B56;
-font-size: 2.25em;
-letter-spacing: 0.5px;
-font-weight: 700;
-}h3 {
-  font-family: 'Archivo Narrow', sans-serif;
-font-size: 1.75em;
-letter-spacing: 0.5px;
-font-weight: 400;
+  font-size: 2.25em;
+  letter-spacing: 0.5px;
+  font-weight: 700;
 }
+
+h3 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.75em;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
 h4 {
   font-family: 'Archivo Narrow', sans-serif;
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 img {
   width: 100%;
 }
+
 .logo {
   width: 24px;
   height: 50px;
 }
+
 a {
   color: #14A098;
-  text-decoration: none; /* none - for No underlining */
+  text-decoration: none;
 }
-a:visited { /* visited link */
+
+a:visited {
   color: #14A098;
 }
+
 a:hover,
 a:focus {
   color: #0F292F;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
 }
 
-a:active { /* selected link */
+a:active {
   color: #994c30;
 }
 
 /* buttons styling*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: transparent;
-  color: #14A098; /* needed to override the default link color */
+  color: #14A098;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px;
@@ -79,18 +91,21 @@ a:active { /* selected link */
   border: 1px solid #14A098;
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  background-color: rgba(20,160,152,0.3);
+  opacity: 0.8;
+  background-color: rgba(20, 160, 152, 0.3);
   text-decoration: none;
 }
+
 .button:active {
   opacity: 0.8;
   color: #ffffff;
   background-color: #0B5B56;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-  .button.contact {
+.button.contact {
   background-color: transparent;
   color: #CB2D6F;
   font-weight: 700;
@@ -100,18 +115,21 @@ a:active { /* selected link */
   border: 1px solid #CB2D6F;
   text-decoration: none;
 }
+
 .button.contact:hover {
-  background-color: rgba(203,45,111,0.3);
+  background-color: rgba(203, 45, 111, 0.3);
   color: #501F31;
   text-decoration: none;
-  }
+}
+
 .button.contact:active {
   opacity: 0.8;
   color: #ffffff;
   background-color: #501F31;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-  .button.cv {
+.button.cv {
   background-color: transparent;
   color: #CB2D6F;
   font-weight: 700;
@@ -121,13 +139,16 @@ a:active { /* selected link */
   border: 1px solid #CB2D6F;
   text-decoration: none;
 }
+
 .button.cv:hover {
-  background-color: rgba(203,45,111,0.3);
+  background-color: rgba(203, 45, 111, 0.3);
   color: #501F31;
   text-decoration: none;
-  }
+}
+
 .button.cv:active {
   opacity: 0.8;
   color: #ffffff;
   background-color: #501F31;
-  text-decoration: none; }
+  text-decoration: none;
+}

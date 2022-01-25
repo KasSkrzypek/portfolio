@@ -14,46 +14,52 @@ Black: rgba(0,0,0,1) #000000
 * {
   box-sizing: border-box;
 }
+
 header {
   background-color: White;
   text-align: center;
   padding: 10px 0;
-  box-shadow:  0px 3px 9px 0px rgba(50, 50, 50, 0.46);
+  box-shadow: 0px 3px 9px 0px rgba(50, 50, 50, 0.46);
   position: fixed;
   width: 100%;
 }
 
-nav{
-    width: 100%;
-    display: inline-block;
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav > ul > li {
+nav {
+  width: 100%;
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
   padding: 0 12px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
   color: #14A098;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   color: #0B5B56
 }
-nav > ul > li > a:hover, a:focus, a:active {
+
+nav>ul>li>a:hover, a:focus, a:active {
   color: #0F292F;
   font-weight: 600;
 }
+
 main {
   padding-top: 193px;
   width: 100%;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Archivo', sans-serif;
@@ -98,22 +104,20 @@ h4 {
   font-weight: 400;
 }
 
-
-
-
 .logo {
   max-width: 24px;
   height: auto;
-  }
+}
+
 .myimage {
   max-width: 300px;
   height: auto;
   text-align: center;
 }
 
-  img {
-    width: 100%;
-  }
+img {
+  width: 100%;
+}
 
 a {
   color: #14A098;
@@ -162,19 +166,20 @@ a:active {
 
 .button.contact {
   background-color: #A7255B;
-  }
+}
 
 .button.contact:hover,
 .button.contact:focus {
   background-color: rgba(203, 45, 111, 0.3);
   color: #501F31;
-  }
+}
 
 .button.contact:active {
   opacity: 0.8;
   color: #ffffff;
   background-color: #501F31;
 }
+
 .social {
   display: inline-block;
   width: 100%;
@@ -184,26 +189,32 @@ a:active {
   color: #A7255B;
   text-align: center;
 }
-.social > a {
+
+.social>a {
   padding: 12px;
 }
 
-.social > a:visited {
+.social>a:visited {
   color: #A7255B;
 }
 
-footer > div > h2 {
+footer>div>h2 {
   color: #A7255B;
 }
 
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #0B5B56; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #0B5B56;
+}
 
 #hero {
   padding: 20px 0;

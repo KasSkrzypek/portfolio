@@ -1,5 +1,4 @@
-/*
-Colors used:
+/*Colors used:
 Primary Color (emerald): rgba(20,160,152,1) #14A098;
 Primary Color shade (emerald light): 1ACCC2
 Primary Color shade (emerald super light): D2F9F7
@@ -25,11 +24,13 @@ header {
 }
 
 nav {
+  margin-top: 0.5em;
   width: 100%;
   display: inline-block;
 }
 
 nav>ul {
+  margin: 0;
   list-style-type: none;
   padding: 0;
 }
@@ -38,7 +39,7 @@ nav>ul>li {
   display: inline-block;
 }
 
-nav>ul>li>a {
+nav a {
   padding: 0 12px;
   text-transform: uppercase;
   text-decoration: none;
@@ -46,17 +47,22 @@ nav>ul>li>a {
   color: #14A098;
 }
 
-nav>ul>li>a:visited {
-  color: #0B5B56
+nav a:visited {
+  color: #14A098;
 }
 
-nav>ul>li>a:hover, a:focus, a:active {
+nav a:hover, nav a:focus, nav a:active {
+  color: #0F292F;
+  font-weight: 600;
+}
+
+.active {
   color: #0F292F;
   font-weight: 600;
 }
 
 main {
-  padding-top: 193px;
+  padding-top: 106.47px;
   width: 100%;
 }
 
@@ -70,6 +76,7 @@ body {
   color: #4a4a4a;
 }
 
+/*Typography*/
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -80,6 +87,22 @@ h1 {
   letter-spacing: 0.75px;
   font-weight: 400;
   text-align: center;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.5em;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 60%;
+  font-weight: 100;
+}
+
+.intro h1 span {
+  display: block;
+  margin-top: 0.5em;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 60%;
+  font-weight: 100;
 }
 
 h2 {
@@ -94,6 +117,7 @@ h2 {
 h3 {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.5em;
+  padding-left: 10px;
   letter-spacing: 0.5px;
   font-weight: 400;
 }
@@ -104,27 +128,105 @@ h4 {
   font-weight: 400;
 }
 
+/* Logo */
+@keyframes logo-move {
+  from {
+    transform: translate(1000px, 0px);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+.logo rect:nth-child(1) {
+  animation-duration: 0.5s;
+  animation-name: logo-move;
+  animation-timing-function: linear;
+}
+
+.logo rect:nth-child(2) {
+  animation-duration: 0.5s;
+  animation-name: logo-move;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+}
+
+.logo rect:nth-child(4) {
+  animation-duration: 0.5s;
+  animation-name: logo-move;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.logo rect:nth-child(3) {
+  animation-duration: 0.5s;
+  animation-name: logo-move;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+}
+
 .logo {
-  max-width: 24px;
+  max-width: 10px;
   height: auto;
 }
 
-.myimage {
+/* Images */
+.myimage img {
   max-width: 300px;
-  height: auto;
+}
+
+.myimage {
+  display: block;
   text-align: center;
+}
+
+.kate img {
+  max-width: 500px;
+}
+
+.kate {
+  display: block;
+  text-align: center;
+}
+
+.persona img {
+  max-width: 300px;
 }
 
 img {
   width: 100%;
 }
 
-a {
-  color: #14A098;
+.flow img {
+  max-width: 180px;
 }
 
+.styleguide img {
+  max-width: 200px;
+}
+
+.mockup img {
+  max-width: 500px;
+}
+
+.mockup {
+  display: block;
+  text-align: center;
+}
+
+#evolution img {
+  max-width: 150px;
+}
+
+#evolution img {
+  display: block;
+  text-align: center;
+}
+
+/* Links */
 a:visited {
-  color: #D2F9F7;
+  color: #14A098;
 }
 
 a:hover,
@@ -137,8 +239,8 @@ a:active {
   color: #994c30;
 }
 
-/* buttons styling*/
-.button {
+/* Buttons styling*/
+a.button {
   display: inline-block;
   color: #ffffff;
   background-color: #14A098;
@@ -150,12 +252,11 @@ a:active {
   box-shadow: 1px 2px 6px #666666;
   transition: 0.2s opacity;
   text-decoration: none;
-  margin: 0 auto;
 }
 
 .button:hover,
 .button:focus {
-  background: #1ACCC2;
+  opacity: 0.7;
 }
 
 .button:active {
@@ -170,14 +271,17 @@ a:active {
 
 .button.contact:hover,
 .button.contact:focus {
-  background-color: rgba(203, 45, 111, 0.3);
-  color: #501F31;
+  opacity: 0.8;
 }
 
 .button.contact:active {
   opacity: 0.8;
   color: #ffffff;
   background-color: #501F31;
+}
+
+.center {
+  text-align: center;
 }
 
 .social {
@@ -221,3 +325,110 @@ footer>div>h2 {
   display: inline-block;
   width: 100%;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 85.875px;
+  }
+
+  .logo {
+    max-width: 15px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%
+  }
+
+  .col-md-8 {
+    width: 66.66%
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #aboutme h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}

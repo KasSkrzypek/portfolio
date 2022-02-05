@@ -378,6 +378,7 @@ a.button {
   /* Remove outline */
   background-color: #CB2D6F;
   /* Set a background color */
+  opacity: 90%;
   color: white;
   /* Text color */
   cursor: pointer;

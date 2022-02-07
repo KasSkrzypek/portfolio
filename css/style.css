@@ -1,5 +1,5 @@
 /*Colors used:
-Primary Color (emerald): rgba(20,160,152,1) #14A098;
+Primary Color (emerald): rgba(20,160,152,1) #11847E;
 Primary Color shade (emerald light): 1ACCC2
 Primary Color shade (emerald super light): D2F9F7
 Primary Color shade (emerald dark): rgba(11,91,86) #0B5B56
@@ -74,11 +74,10 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
-  color: #14A098;
+  color: #11847E;
 }
 
 nav a:visited {
-  color: #14A098;
 }
 
 nav a:hover, nav a:focus, nav a:active {
@@ -303,11 +302,11 @@ h4 {
 
 /* Links */
 a:visited {
-  color: #14A098;
+  color: #11847E;
 }
 
 a {
-  color: #14A098;
+  color: #11847E;
 }
 
 a:hover,
@@ -324,7 +323,7 @@ a:active {
 a.button {
   display: inline-block;
   color: #ffffff;
-  background-color: #14A098;
+  background-color: #11847E;
   font-size: 0.875em;
   font-weight: 500;
   text-transform: uppercase;
@@ -420,6 +419,7 @@ a.button {
 
 .social>a {
   padding: 12px;
+  color: #A7255B;
 }
 
 .social>a:visited {
@@ -427,6 +427,9 @@ a.button {
 }
 
 footer>div>h2 {
+  color: #A7255B;
+}
+footer>div>p>a {
   color: #A7255B;
 }
 

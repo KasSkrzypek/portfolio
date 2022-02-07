@@ -32,7 +32,6 @@ $(document).ready(function() {
   });
 });
 
-
 //Get the back to top button:
 mybutton = document.getElementById("myBtn");
 

@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="Katarzyna Skrzypek" content="Katarzyna Skrzypek">
 	<meta name="description" content="UX/UI designer with background in visual marketing and customer experience.">
-	<title>Kasia Skrzypek UX/UI designer Berlin Germany. </title>
+	<title>Kasia Skrzypek UX/UI designer </title>
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -21,20 +21,33 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&family=Archivo:wght@300&family=Bebas+Neue&display=swap" rel="stylesheet">
-
-	<script src="https://kit.fontawesome.com/b192d5ccb1.js" crossorigin="anonymous"></script> <!-- fontawesome kit code -->
+	<!-- fadein -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- fontawesome kit code -->
+	<script src="https://kit.fontawesome.com/b192d5ccb1.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
 
 	<header>
 		<div class="container">
 			<div class="navtoggle" id="myNavtoggle">
-				<svg class="logo" width="244" height="542" viewBox="0 0 244 542" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect width="20" height="360" rx="10" fill="black" />
-					<rect x="223.112" y="-3.61353" width="19.6353" height="284.012" rx="9.81767" transform="rotate(52.0643 223.112 -3.61353)" fill="black" />
-					<rect x="234.681" y="347.115" width="19.6353" height="300.09" rx="9.81767" transform="rotate(52.0643 234.681 347.115)" fill="black" />
-					<rect width="19.6353" height="299.846" rx="9.81767" transform="matrix(0.614777 -0.788701 -0.788701 -0.614777 235.489 373.825)" fill="black" />
-				</svg>
+				<a href="index.html" class="active">
+					<svg class="logo2" width="258" height="551" viewBox="0 0 258 551" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+						<rect y="4" width="20" height="360" rx="10" fill="#164D59" />
+						<path
+							d="M225.666 6.03566C229.943 2.70225 236.112 3.46674 239.445 7.74319C242.779 12.0196 242.014 18.1887 237.738 21.5221L20.1237 191.148C15.8473 194.482 9.67826 193.717 6.34484 189.441C3.01143 185.164 3.77591 178.995 8.05236 175.662L225.666 6.03566Z"
+							fill="#164D59" />
+						<path
+							d="M237.235 356.765C241.512 353.431 247.681 354.196 251.014 358.472C254.348 362.749 253.583 368.918 249.307 372.251L28.1121 544.668C23.8357 548.002 17.6666 547.237 14.3332 542.961C10.9998 538.684 11.7643 532.515 16.0407 529.182L237.235 356.765Z"
+							fill="#164D59" />
+						<path
+							d="M238.043 371.403C242.32 374.736 248.489 373.972 251.822 369.695C255.156 365.419 254.391 359.25 250.115 355.917L19.8146 176.402C15.5381 173.068 9.36911 173.833 6.0357 178.109C2.70228 182.386 3.46676 188.555 7.74322 191.888L238.043 371.403Z"
+							fill="#164D59" />
+					</svg>
+					<img class="logostatic" src="img/logo-mobile-2.svg" alt="Log0">
+				</a>
 				<nav>
 					<ul class="navigation">
 						<li><a href="index.html" class="active">Work</a></li>
@@ -50,27 +63,31 @@
 	<main>
 		<div class="section hero" id="hero">
 
-			<div class="container">
-				<h1> Hi, I'm Kasia. <span>A UX/UI designer with background in visual marketing and customer experience.</span></h1>
+			<div>
+
+
+				<h1> UX designer with background in visual marketing and customer experience.</h1>
 			</div>
 		</div>
 
+
 		<div class="section work" id="work">
 			<div class="container">
-				<h2> My recent projects </h2>
 
-				<div class="row">
+				<h2> Recent projects </h2>
 
-					<div class="col-lg-5">
-						<h3 class="md-heading"> CarbCutter webapp design project </h3>
+				<div class="row" data-aos="fade-in">
+
+					<div class="column col-lg-5">
+
 						<picture>
 							<source srcset="img/cc/CC-mobile-mockup-header-image-comp.png" media="(max-width:767px)">
 							<img src="img/cc/CC-desktop-mockup-header-image-comp.png" alt="My Image">
 						</picture>
 					</div>
 
-					<div class="col-lg-7">
-						<h3 class="lg-heading"> CarbCutter webapp design project </h3>
+					<div class="column col-lg-7">
+						<h3> CarbCutter webapp design project </h3>
 						<p> Design project to create an MVP webapp prototype to help its users monitor their carbohydrate and calorie intake. </p>
 						<p> UX/UI/Interaction Design | Information Architecture Design | UX Research | Usability testing </p>
 						<p> Tools used: Figma | Adobe Create Suite | Balsamiq | Miro </p>
@@ -78,7 +95,30 @@
 							<a href="carbcutter.html" class="button"> Read more </a>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row" data-aos="fade-in">
 
+					<div class="column col-lg-5">
+
+						<picture>
+							<source srcset="img/smx/SMX-mobile-mockup-header-image-comp.png" media="(max-width:767px)">
+							<img src="img/smx/SMX-desktop-mockup-header-image-comp.png" alt="My Image">
+						</picture>
+					</div>
+
+					<div class="column col-lg-7">
+						<h3> ShareMyXRay redesign project </h3>
+						<p> Student project to redesign a responsive webapp that allows imagery sharing between
+							medical institutions and patients. Its goal is to provide the users with an uncomplicated
+							experience for requesting, sharing and storing of medical imagery. </p>
+						<p> User Flows | Wireframes | Visual design Mockup design | Moodboarding | Prototyping </p>
+						<p> Tools used: Figma | Adobe Create Suite </p>
+						<div class="center mt2">
+							<a href="smx.html" class="button"> Read more </a>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -119,11 +159,14 @@
 
 		</div>
 	</footer>
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="js/scripts.js"></script>
+
+
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>

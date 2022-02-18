@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="Katarzyna Skrzypek" content="Katarzyna Skrzypek">
 	<meta name="description" content="UX/UI designer with background in visual marketing and customer experience.">
-	<title>Kasia Skrzypek UX/UI designer Berlin Germany. </title>
+	<title>Kasia Skrzypek UX/UI designer </title>
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -21,10 +21,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&family=Archivo:wght@300&family=Bebas+Neue&display=swap" rel="stylesheet">
-
-	<script src="https://kit.fontawesome.com/b192d5ccb1.js" crossorigin="anonymous"></script> <!-- fontawesome kit code -->
-
-
+	<!-- fadein -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- fontawesome kit code -->
+	<script src="https://kit.fontawesome.com/b192d5ccb1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,16 +32,26 @@
 	<header>
 		<div class="container">
 			<div class="navtoggle" id="myNavtoggle">
-				<svg class="logo" width="244" height="542" viewBox="0 0 244 542" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect width="20" height="360" rx="10" fill="black" />
-					<rect x="223.112" y="-3.61353" width="19.6353" height="284.012" rx="9.81767" transform="rotate(52.0643 223.112 -3.61353)" fill="black" />
-					<rect x="234.681" y="347.115" width="19.6353" height="300.09" rx="9.81767" transform="rotate(52.0643 234.681 347.115)" fill="black" />
-					<rect width="19.6353" height="299.846" rx="9.81767" transform="matrix(0.614777 -0.788701 -0.788701 -0.614777 235.489 373.825)" fill="black" />
-				</svg>
+				<a href="index.html" class="active">
+					<svg class="logo2" width="258" height="551" viewBox="0 0 258 551" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+						<rect y="4" width="20" height="360" rx="10" fill="#164D59" />
+						<path
+							d="M225.666 6.03566C229.943 2.70225 236.112 3.46674 239.445 7.74319C242.779 12.0196 242.014 18.1887 237.738 21.5221L20.1237 191.148C15.8473 194.482 9.67826 193.717 6.34484 189.441C3.01143 185.164 3.77591 178.995 8.05236 175.662L225.666 6.03566Z"
+							fill="#164D59" />
+						<path
+							d="M237.235 356.765C241.512 353.431 247.681 354.196 251.014 358.472C254.348 362.749 253.583 368.918 249.307 372.251L28.1121 544.668C23.8357 548.002 17.6666 547.237 14.3332 542.961C10.9998 538.684 11.7643 532.515 16.0407 529.182L237.235 356.765Z"
+							fill="#164D59" />
+						<path
+							d="M238.043 371.403C242.32 374.736 248.489 373.972 251.822 369.695C255.156 365.419 254.391 359.25 250.115 355.917L19.8146 176.402C15.5381 173.068 9.36911 173.833 6.0357 178.109C2.70228 182.386 3.46676 188.555 7.74322 191.888L238.043 371.403Z"
+							fill="#164D59" />
+					</svg>
+					<img class="logostatic" src="img/logo-mobile-2.svg" alt="Log0">
+				</a>
 				<nav>
 					<ul class="navigation">
-						<li><a href="index.html" class="active">Work</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="index.html" >Work</a></li>
+						<li><a href="about.html" class="active">About</a></li>
 						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
 						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li> <!-- hamburger -->
 					</ul>
@@ -52,37 +62,35 @@
 
 	<main>
 		<div class="section hero">
-			<div class="container">
+			<div class="container" >
 				<div>
-					<h1> About </h1>
+					<h2> My story </h2>
 				</div>
 			</div>
 		</div>
 
 		<div class="aboutme" id="aboutme">
-			<div class="container">
-				<picture class="resize">
+
+				<picture class="resize round" >
 					<source srcset="img/mobile-about-me-comp.png" media="(max-width:767px)">
 					<img src="img/desktop-about-me-comp.png" alt="My image">
 				</picture>
-				<div class="row">
-					<div class="column">
-						<h2>My Story </h2>
+				<div class="container">
 
-						<p>Born in Poland, grown in Copenhagen, shaped in Berlin and regularly asked how to pronounce my name.
+
+
+									<p>Born in Poland, grown in Copenhagen, shaped in Berlin and regularly asked how to pronounce my name.
 						</p>
 						<p>My career path has not been exactly linear, which allows me to bring diverse experiences and perspectives into my work.
 						</p>
-						<p>I hold a Master’s degree in language but gained professional experience in the tech and e-commerce industries.
+						<p>I hold a Master’s degree in languages but gained professional experience in the tech and e-commerce industries.
 						</p>
 						<p>In my previous roles I was highly recognized for my ability to manage (multiple) projects and tasks to deadline, as well my ability to swiftly adapt to changing timelines or expectations.
 						</p>
 						<p>In my work, communication has always been tremendously important. As a team of one, nearly single-handedly serving the whole company’s visual content needs, regular connecting with other teams helped me ensure efforts are aligned and
 							resources distributed efficiently.
 						</p>
-						<p>My favorite work project I take a lot of pride in was creating a digital asset management automated solution enabling key stakeholders to self-access multiple visual asset libraries based on their content needs and legal requirements.
-							This has enabled smooth cross-team collaboration on existing assets and significantly reduced the amount of time spent on imagery sourcing tasks and legal risks resulting from misinterpreting existing licensing constraints.
-						</p>
+
 						<p>When I’m done solving the world's problems, you will find me crafting historical costumes and going back in time to produce images for museums and historical publications.
 						</p>
 						<p>Having successfully completed a UX Design Education with a User Interface and Front-End Design specializations at CareerFoundry, I am eager to combine my creative skills with newly acquired design process tools and knowledge.
@@ -90,22 +98,24 @@
 						<p>I am looking forward to devising innovative digital products in the tech or medical industry. While I am currently based in Berlin, I am open to relocate or to work remotely.
 						</p>
 
+
 						<div class="center mt2">
 							<a href="files/Katarzyna-Skrzypek-Resume.pdf" target="_blank" class="button cv">View CV</a>
 						</div>
+							</div>
 						<!--  alternative:    <a href="files/Katarzyna_Skrzypek-Resume.pdf" download>Download my Resume</a>    -->
 
-					</div>
-					<div class="row">
+
+					<div class="row" data-aos="fade-in">
 
 						<h2> Skills & Tools </h2>
 
-						<div class="column col-md-6">
+						<div class="column col-md-6" >
 							<h3> Relevant Skills: </h3>
 							<ul>
-								<li>Design Thinking and User-Centered Design Process</li>
+								<li>Design Thinking | User-Centered Design Process</li>
 								<li>User research: Competitor Analysis | SWOT Analysis | User interviews</li>
-								<li>User Personas | User Flows | User Journey Maps</li>
+								<li>User Personas | User Flows | User Journeys</li>
 								<li>Information Architecture</li>
 								<li>Wireframing and Prototyping</li>
 								<li>Usability Testing</li>
@@ -138,13 +148,13 @@
 							</ul>
 						</div>
 
-					</div>
+
 
 				</div>
 
 			</div>
 
-		</div>
+
 
 
 	</main>
@@ -181,11 +191,14 @@
 
 		</div>
 	</footer>
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="js/scripts.js"></script>
+
+
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>

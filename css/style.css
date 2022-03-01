@@ -13,9 +13,7 @@ Black: rgba(0,0,0,1) #000000
 */
 * {
   box-sizing: border-box;
-
 }
-
 
 #myImg {
   border-radius: 5px;
@@ -23,23 +21,32 @@ Black: rgba(0,0,0,1) #000000
   transition: 0.3s;
 }
 
-
-#myImg:hover {opacity: 0.7;}
-
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(255,255,255); /* Fallback color */
-  background-color: rgba(255,255,255,1); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255);
+  /* Fallback color */
+  background-color: rgba(255, 255, 255, 1);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -72,13 +79,23 @@ Black: rgba(0,0,0,1) #000000
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -101,7 +118,7 @@ Black: rgba(0,0,0,1) #000000
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
@@ -114,6 +131,7 @@ header {
   box-shadow: 0px 0.1px 9px 0px rgba(50, 50, 50, 0.30);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .navtoggle li:not(:last-child) {
@@ -127,9 +145,9 @@ header {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
-  padding-right: 0;
-  font-size: 20px;
+  top: -10px;
+  padding: 10px;
+  font-size: 24px;
 }
 
 .navtoggle.responsive li {
@@ -156,7 +174,7 @@ nav {
   display: inline-block;
 }
 
-nav>ul {
+nav >ul {
   margin: 0;
   list-style-type: none;
   padding: 0;
@@ -170,8 +188,7 @@ nav a {
   color: #164D59;
 }
 
-nav a:visited {
-}
+nav a:visited {}
 
 nav a:hover, nav a:focus, nav a:active {
   color: #0F292F;
@@ -183,7 +200,6 @@ nav a:hover, nav a:focus, nav a:active {
   font-weight: 600;
   text-decoration: none;
 }
-
 
 main {
   padding-top: 42px;
@@ -211,7 +227,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: 'Archivo Narrow', sans-serif;
-  color: #0B5B56;
+  color: #164D59;
   font-size: 1.75em;
   text-align: left;
   letter-spacing: 0.5px;
@@ -229,6 +245,7 @@ h1 {
   font-size: 60%;
   font-weight: 100;
 }
+
 .hero h1 span {
   display: block;
   margin-top: 0.5em;
@@ -249,7 +266,6 @@ h3 {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.5em;
   padding-left: 10px;
-  padding-top: 20px;
   letter-spacing: 0.5px;
   font-weight: 400;
 }
@@ -257,7 +273,6 @@ h3 {
 .process h4 {
   padding-left: 26px;
 }
-
 
 .lg-heading {
   display: none;
@@ -276,7 +291,6 @@ h4 {
 
 .mt2 {
   margin-top: 2em;
-
 }
 
 /* Logo */
@@ -288,19 +302,21 @@ h4 {
   to {
     transform: translate(0px, 0px);
   }
-
 }
+
 .logo rect:nth-child(1) {
   animation-duration: 1s;
   animation-name: logo-move;
   animation-timing-function: linear;
 }
+
 .logo rect:nth-child(2) {
   animation-duration: 1s;
   animation-name: logo-move;
   animation-timing-function: linear;
   animation-delay: 0.5s;
 }
+
 .logo rect:nth-child(4) {
   animation-duration: 1s;
   animation-name: logo-move;
@@ -320,55 +336,58 @@ h4 {
   height: auto;
 }
 
-
 @keyframes logo2-move {
   from {
     transform: translate(-30px, 0px);
   }
+
   to {
     transform: translate(0px, 0px);
   }
 }
+
 @keyframes logo3-move {
   from {
     transform: translate(-400px, 0px);
   }
+
   to {
     transform: translate(0px, 0px);
   }
 }
 
 .logo2 rect:nth-child(1) {
-
   animation-duration: 0.5s;
   animation-name: logo2-move;
   animation-timing-function: ease-in;
 }
+
 .logo2 path:nth-child(2) {
   animation-duration: 2s;
   animation-name: logo3-move;
   animation-timing-function: ease-in;
 }
+
 .logo2 path:nth-child(3) {
   animation-duration: 2s;
   animation-name: logo3-move;
   animation-timing-function: ease-in;
 }
 
-  .logo2 path:nth-child(4) {
-    animation-duration: 2s;
-    animation-name: logo3-move;
-    animation-timing-function: ease-in;
-  }
+.logo2 path:nth-child(4) {
+  animation-duration: 2s;
+  animation-name: logo3-move;
+  animation-timing-function: ease-in;
+}
 
-  .logo2 {
+.logo2 {
+  max-width: 12px;
+  height: auto;
+}
 
-    max-width: 11px;
-    height: auto;
-  }
 .logostatic {
   padding-left: 10px;
-  max-width: 110px;
+  max-width: 120px;
   height: auto;
 }
 
@@ -376,6 +395,7 @@ h4 {
 .resize img {
   max-width: 300px;
 }
+
 .round img {
   border-radius: 50%;
 }
@@ -410,11 +430,6 @@ img.flowimg {
   max-width: 180px;
 }
 
-#flowimg {
-
-  text-align: center;
-}
-
 .styleguide img {
   max-width: 200px;
 }
@@ -429,7 +444,7 @@ img.flowimg {
 }
 
 #evolution img {
-  max-width: 200px;
+  max-width: 250px;
   margin: 0.5em 0.5em 2em;
   border-radius: 7px;
   box-shadow: 3px 3px 6px #cccccc;
@@ -449,12 +464,31 @@ img.flowimg {
   overflow: scroll;
 }
 
+.testing .row {
+  display: flex;
+  overflow: scroll;
+}
+
+#testingimg img {
+  max-width: 250px;
+  margin: 0.5em 0.5em 2em;
+  border-radius: 7px;
+  box-shadow: 3px 3px 6px #cccccc;
+}
+
+#testingimg img {
+  display: block;
+  text-align: center;
+}
+
 #process h3 {
   min-height: 69px;
 }
+
 #work h3 {
-    padding-top: 0px;
+  padding-top: 0px;
 }
+
 /* Links */
 a:visited {
   color: #164D59;
@@ -475,6 +509,7 @@ a:active {
 }
 
 /* Buttons styling*/
+
 a.button {
   display: inline-block;
   color: #ffffff;
@@ -572,19 +607,20 @@ a.button {
   text-align: center;
 }
 
-.social>a {
+.social >a {
   padding: 12px;
   color: #A7255B;
 }
 
-.social>a:visited {
+.social >a:visited {
   color: #A7255B;
 }
 
-footer>div>h2 {
+footer >div >h2 {
   color: #A7255B;
 }
-footer>div>p>a {
+
+footer >div>p>a {
   color: #A7255B;
 }
 
@@ -609,10 +645,7 @@ footer>div>p>a {
   padding-bottom: 40px;
   box-shadow: 0px 0.1px 9px 0px rgba(50, 50, 50, 0.10);
   border: 0.5px solid #ffffff;
-
-
 }
-
 
 .intro .container {
   padding-bottom: 44px;
@@ -656,13 +689,10 @@ footer>div>p>a {
 
 .aboutme .container {
   padding-bottom: 25px;
-
-
 }
 
 #hero {
   padding: 20px 10px;
-
   display: inline-block;
   width: 100%;
 }
@@ -681,30 +711,33 @@ footer>div>p>a {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   main p {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
+
   .logo2 {
     max-width: 15px;
     height: auto;
   }
+
   .logostatic {
     padding-left: 20px;
     max-width: 142px;
     height: auto;
   }
+
   .navtoggle.responsive nav {
     text-align: right;
     line-height: 1.6px;
     padding: 0px 0px 2px 0px;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -723,7 +756,7 @@ Medium devices (640px and larger)
     float: right;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -731,17 +764,15 @@ Medium devices (640px and larger)
     padding-top: 85.875px;
   }
 
-
-
   [class*="col-"] {
     float: left;
     padding: 10px;
   }
 
-
   .col-md-2 {
     width: 16.66%;
   }
+
   .col-md-3 {
     width: 25%;
   }
@@ -749,9 +780,11 @@ Medium devices (640px and larger)
   .col-md-4 {
     width: 33.33%
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-8 {
     width: 66.66%
   }
@@ -759,6 +792,7 @@ Medium devices (640px and larger)
   .col-md-9 {
     width: 75%;
   }
+
   .col-md-10 {
     width: 83.33%;
   }
@@ -772,9 +806,15 @@ Medium devices (640px and larger)
   .evolution .row {
     justify-content: space-around;
   }
+
+  .testing .row {
+    justify-content: space-around;
+  }
+
   #process h4 {
     min-height: 54px;
   }
+
   #aboutme h3 {
     margin-top: 0;
   }
@@ -805,15 +845,18 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .logo2 {
     max-width: 20px;
     height: auto;
   }
+
   .logostatic {
     padding-left: 20px;
     max-width: 184px;
     height: auto;
   }
+
   .col-lg-2 {
     width: 16.66%;
   }
@@ -861,6 +904,10 @@ Large devices (1024px or larger)
   }
 
   .evolution .row {
+    justify-content: space-evenly;
+  }
+
+  .testing .row {
     justify-content: space-evenly;
   }
 

@@ -61,6 +61,8 @@
 	</header>
 
 	<main>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
 
 		<div class="intro">
 			<div class="container">
@@ -106,7 +108,7 @@
 
 			<div class="container" data-aos="fade-in">
 				<h2> User-centered design process </h2>
-				<div class="row" >
+				<div class="row">
 					<div class="column col-md-3">
 						<h4>Understand & Empathize</h4>
 						<ul>
@@ -129,7 +131,7 @@
 							<li><a href="#testing">Usability Testing</a></li>
 						</ul>
 					</div>
-					<div class="column col-md-6 col-md-3">
+					<div class="column col-md-3">
 						<h4>Iterate</h4>
 						<ul>
 							<li><a href="#styleguide">UI Styleguide</a></li>
@@ -146,8 +148,9 @@
 				<h2> Understand and Empathize </h2>
 				<div class="section analysis">
 					<div class="row">
-						<h3>Competitive Analysis</h3>
+
 						<div class="column col-md-6 col-md-8 col-lg-9">
+							<h3>Competitive Analysis</h3>
 							<p>In order to understand what solutions already are available to the users as well as where the opportunities for improvement lie, I performed a competitive analysis of two top contenders for the keto audience: Carb Manager and
 								MyFitnessPal.
 							</p>
@@ -171,7 +174,7 @@
 				</div>
 				<a name="target" id="interviews" class="anchor">&nbsp;</a>
 				<div class="section interviews">
-					<div class="row" >
+					<div class="row">
 						<div class="column">
 
 							<h3 class="anchorheading">User Interviews</h3>
@@ -238,7 +241,7 @@
 							</div>
 						</div>
 					</div>
-					<picture class="kate" >
+					<picture class="kate" data-aos="zoom-in">
 						<source srcset="img/cc/cc-mobile-persona-kate-comp.png" media="(max-width:767px)">
 						<img src="img/cc/cc-desktop-persona-kate-comp.png" alt="Kate persona image">
 					</picture>
@@ -282,15 +285,10 @@
 							</ul>
 						</div>
 						<div class="column col-md-4 col-lg-3">
-							<div id="flowimg">
-								<img id="myImg" class="flowimg" src="img/cc/cc-desktop-user-flow-comp.png" alt="My Image" >
+							<div class="center">
+								<img class="flowimg" src="img/cc/cc-desktop-user-flow-comp.png" alt="My Image">
 
-								<!-- The Modal -->
-								<div id="myModal" class="modal">
-									<span class="close">&times;</span>
-									<img class="modal-content" id="img01" alt="Kate's user flow">
-								</div>
-											</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -299,7 +297,7 @@
 
 		<div class="section prototype" id="evolution" data-aos="fade-in">
 			<h2>Prototype & test</h2>
-			<div class="container" >
+			<div class="container">
 				<div class="section evolution">
 					<h3>Design evolution</h3>
 					<p>Mapping out the key workflows helped me focus on the main app functionalities during the early stages of prototyping.</p>
@@ -311,7 +309,7 @@
 						<h4>Sign up</h4>
 						<div class="row">
 							<img src="img/cc/evo-signup-lowfid.png" alt="My Image">
-							<img src="img/cc/evo-signup-hifid.png" alt="My Image">
+							<img src="img/cc/evo-signup-midfid.png" alt="My Image">
 							<img src="img/cc/evo-signup-hifid.png" alt="My Image">
 						</div>
 
@@ -332,8 +330,8 @@
 						<h4>Account setup</h4>
 						<p>The account setup screen underwent considerable changes based on usability testing:</p>
 						<div class="row">
+							<img src="img/cc/evo-setup-lowfid.png" alt="My Image">
 							<img src="img/cc/evo-setup-midfid.png" alt="My Image">
-							<img src="img/cc/evo-setup-hifid.png" alt="My Image">
 							<img src="img/cc/evo-setup-hifid.png" alt="My Image">
 						</div>
 					</div>
@@ -353,8 +351,8 @@
 						<h4>Dashboard</h4>
 						<p>The core of the dashboard remained the same throughout the iterations - with some exceptions:</p>
 						<div class="row">
+							<img src="img/cc/evo-dash-lowfid.png" alt="My Image">
 							<img src="img/cc/evo-dash-midfid.png" alt="My Image">
-							<img src="img/cc/evo-dash-hifid.png" alt="My Image">
 							<img src="img/cc/evo-dash-hifid.png" alt="My Image">
 						</div>
 					</div>
@@ -373,8 +371,8 @@
 					<div>
 						<h4>Search food</h4>
 						<div class="row">
+							<img src="img/cc/evo-search-lowfid.png" alt="My Image">
 							<img src="img/cc/evo-search-midfid.png" alt="My Image">
-							<img src="img/cc/evo-search-hifid.png" alt="My Image">
 							<img src="img/cc/evo-search-hifid.png" alt="My Image">
 						</div>
 					</div>
@@ -394,8 +392,8 @@
 						<h4>Food screen</h4>
 						<p>The functionalities remained the same but the interface has been changed considerably:</p>
 						<div class="row">
+							<img src="img/cc/evo-food-lowfid.png" alt="My Image">
 							<img src="img/cc/evo-food-midfid.png" alt="My Image">
-							<img src="img/cc/evo-food-hifid.png" alt="My Image">
 							<img src="img/cc/evo-food-hifid.png" alt="My Image">
 						</div>
 					</div>
@@ -414,46 +412,75 @@
 			</div>
 		</div>
 		<a name="target" id="testing" class="anchor">&nbsp;</a>
-		<div class="section testing">
+		<div class="section testing" id="testingimg">
 			<div class="container" data-aos="fade-in">
 				<h2>Usability testing</h2>
 				<div class="section testing">
-					<div class="row">
-						<div class="column col-md-3 col-lg-4">
-							<picture class="resize">
-								<source srcset="img/cc/cc-mobile-board-testing-comp.png" media="(max-width:767px)">
-								<img src="img/cc/cc-board-testing-comp.png" alt="Save meal screen">
-							</picture>
+
+					<p>At the mid-fidelity stage it was neccessary to conduct a usability testing.</p>
+					<p>I wanted to understand if my design is developing in the right direction and needed aswers to questions that arose in the ideation stage. </p>
+
+
+				</div>
+				<h3>What I needed to know</h3>
+				<ul>
+					<li>Do the users understand the purpose and value of the app?</li>
+					<li>Do they understand the concept of Log in the context of the app?</li>
+					<li>How do the users search for food items in the app</li>
+					<li>Are all dashboard elements understandable/useful /finadable to the users? Is anything missing?</li>
+					<li>Do they find all the functionalities useful so far? </li>
+					<li>What errors to they make and how do they recover from them?</li>
+				</ul>
+				<div>
+					<h3>What I learned from usability testing:</h3>
+					<div>
+						<h4>Save meal screen</h4>
+						<div class="row">
+							<img src="img/cc/cc-testing-savemeal-pain.png" alt="My Image">
+							<img src="img/cc/cc-testing-savemeal-solution.png" alt="My Image">
 						</div>
-						<div class="column col-md-9 col-lg-8">
-							<p>At the mid-fidelity stage it was neccessary to conduct a usability testing.</p>
-							<p>I wanted to understand if my design is developing in the right direction and needed aswers to questions that arose in the ideation stage. </p>
+
+						<div>
+							<p style="color:#FA3243">Pain point:</p>
+							<p>
+								The users were looking for a CTA button above the fold. They ended up using “enter” key on the keyboard but it was not obvious to them.
+							</p>
+							<p style="color:#0C9381">Solution:</p>
+							<p>
+								Include a CTA button above the fold. </p>
 						</div>
 
 					</div>
-					<h3>What I needed to know</h3>
-					<ul>
-						<li>Do the users understand the purpose and value of the app?</li>
-						<li>Do they understand the concept of Log in the context of the app?</li>
-						<li>How do the users search for food items in the app</li>
-						<li>Are all dashboard elements understandable/useful /finadable to the users? Is anything missing?</li>
-						<li>Do they find all the functionalities useful so far? </li>
-						<li>What errors to they make and how do they recover from them?</li>
-					</ul>
-					<div class="row">
-						<h3>What I learned from usability testing:</h3>
-						<picture>
-							<source srcset="img/cc/cc-mobile-testing-savemeal-collage-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-testing-savemeal-collage-comp.png" alt="Log screen image">
-						</picture>
-						<picture>
-							<source srcset="img/cc/cc-mobile-testing-logscreen-comp.png" media="(max-width:767px)">
-							<img src="img/cc/cc-testing-logscreen-comp.png" alt="My Image">
-						</picture>
+					<div>
+						<h4>Log screen</h4>
+						<div class="row">
+							<img src="img/cc/cc-testing-logscreen-pain.png" alt="My Image">
+							<img src="img/cc/cc-testing-logscreen-sol1.png" alt="My Image">
+							<img src="img/cc/cc-testing-logscreen-sol2.png" alt="My Image">
+						</div>
 					</div>
+					<div>
+						<p style="color:#FA3243">Pain point:</p>
+						<p>
+							The users used only local CTAs to add food to meals. They did not understand the global + CTA initially. The presence of both types of CTA confused them.
+						</p>
+						<p style="color:#FA8B00">Solution 1 - Almost there:</p>
+						<p>
+							Keep it simple with one global + CTA. The meal type will be selected automatically based on time of day or in the following screen as a drop down.
+						</p>
+						<p style="color:#0C9381">Solution 2:</p>
+						<p>
+							Do we even need the Global + CTA button? Consider removing it altogether and only keep the local Add Food CTAs.
+						</p>
+						<p>
+							After further testing on 11 participants, this solution was the winning one.
+						</p>
+					</div>
+
 				</div>
 			</div>
 		</div>
+
 
 		<div class="section iterate" id="styleguide" data-aos="fade-in">
 			<div class="container">

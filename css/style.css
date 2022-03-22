@@ -235,7 +235,7 @@ h1, h2, h3, h4 {
 h1 {
   font-family: 'Archivo Narrow', sans-serif;
   color: #164D59;
-  font-size: 1.75em;
+  font-size: 2em;
   text-align: left;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -257,7 +257,7 @@ h1 {
   display: block;
   margin-top: 0.5em;
   font-family: 'Archivo Narrow', sans-serif;
-  font-size: 60%;
+  font-size: 75%;
   font-weight: 100;
 }
 

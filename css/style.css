@@ -440,11 +440,11 @@ img.flowimg {
 }
 
 .styleguide img {
-  max-width: 200px;
+  max-width: 600px;
 }
 
 .mockup img {
-  max-width: 500px;
+  max-width: 300px;
 }
 
 .mockup {
@@ -737,7 +737,9 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
   }
-
+  .styleguide img {
+    max-width: 800px;
+  }
   nav > ul > li {
     display: inline-block;
   }
@@ -753,6 +755,9 @@ Medium devices (640px and larger)
     height: auto;
   }
 
+  .mockup img {
+    max-width: 600px;
+  }
   .navtoggle.responsive nav {
     text-align: right;
     line-height: 1.6px;
@@ -825,12 +830,11 @@ Medium devices (640px and larger)
   }
 
   .evolution .row {
-    justify-content: space-around;
+    display: flex;
+    overflow: scroll;
   }
 
-  .testing .row {
-    justify-content: space-around;
-  }
+
 
   #process h4 {
     min-height: 54px;

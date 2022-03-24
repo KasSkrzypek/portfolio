@@ -260,6 +260,9 @@ h1 {
   font-size: 75%;
   font-weight: 100;
 }
+.hero h1 {
+    padding-bottom: 0px;
+}
 
 h2 {
   font-family: 'Bebas Neue', sans-serif;

@@ -662,7 +662,7 @@ footer >div>p>a {
 }
 #aboutme .container {
   margin: auto;
-max-width: 800px;
+/* max-width: 800px; */
 }
 .intro .container {
   margin: auto;
@@ -807,7 +807,7 @@ Medium devices (640px and larger)
   }
 
   .col-md-4 {
-    width: 33.33%
+    width: 33.33%;
   }
 
   .col-md-6 {
@@ -815,7 +815,7 @@ Medium devices (640px and larger)
   }
 
   .col-md-8 {
-    width: 66.66%
+    width: 66.66%;
   }
 
   .col-md-9 {
